@@ -3,7 +3,8 @@ const MeuApp = {
         return{
             name: "João Vitor", //dado que é chamado pelo html
             idade: 19,
-            input_name: "" // está bindado com o input v-model
+            input_name: "", // está bindado com o input v-model
+            input_idade: ""
         }
     },
     methods: {
@@ -11,7 +12,7 @@ const MeuApp = {
             e.preventDefault();
             console.log(this.input_name);
 
-            this.name = this.input_name;
+            this.name = this.input_name
         }
     }
 }
