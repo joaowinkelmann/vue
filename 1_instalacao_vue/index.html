@@ -10,7 +10,12 @@
 </head>
 <body>
     <div id="app">
+        <form id="app-form">
+            <input type="text" name="nome" id="nome" v-model="input_name">
+            <input type="submit" value="Enviar" v-on:click="submitForm">
+        </form>
         <p>O meu nome é: {{ name }}</p> <!-- /*importar informações do app é feito com {{ }}*/ -->
+        <p>O meu nome em tempo real é: {{ input_name }}</p>
         <p>Tenho a idade: {{ idade }}</p> <!-- /*importar informações do app é feito com {{ }}*/ -->
     </div>
 
